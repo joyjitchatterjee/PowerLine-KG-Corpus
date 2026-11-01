@@ -6,11 +6,11 @@
 [![GLOW at ISWC](https://img.shields.io/badge/GLOW%20%40%20ISWC-2026-315c85)](https://glow-workshop.github.io/iswc2026/)
 [![Cite](https://img.shields.io/badge/cite-CITATION.cff-19786c)](CITATION.cff)
 
-Companion data for **Graph-Grounded Multimodal Agent for Trustworthy Power-Line Operations and Maintenance**, presented at GLOW @ ISWC 2026.
+Companion data for **[Graph-Grounded Multimodal Agent for Trustworthy Power-Line Operations and Maintenance](https://joyjitchatterjee.github.io/assets/papers/glow-2026-power-line-om.pdf)**, presented at GLOW @ ISWC 2026.
 
 Sania Verma, Joyjit Chatterjee, Jing Guo, Akash Marar, Rajendra Shankaran, Garima Sharma, Zekun Guo, and Anu Mehra.
 
-[Download annotations](data/annotations.csv) | [Data card](docs/DATA_CARD.md) | [Load the KG](docs/KNOWLEDGE_GRAPH.md) | [Provenance](docs/PROVENANCE.md) | [Citation](#citation)
+[Paper PDF](https://joyjitchatterjee.github.io/assets/papers/glow-2026-power-line-om.pdf) | [Download annotations](data/annotations.csv) | [Data card](docs/DATA_CARD.md) | [Load the KG](docs/KNOWLEDGE_GRAPH.md) | [Provenance](docs/PROVENANCE.md) | [Citation](#citation)
 
 ## Available resources
 
@@ -86,7 +86,7 @@ If you use the graph or annotations in research, please cite our paper and ident
   booktitle = {2nd Workshop on Graph-enhanced LLMs for trustworthy Web data management (GLOW), co-located with ISWC},
   year = {2026},
   address = {Bari, Italy},
-  url = {https://glow-workshop.github.io/iswc2026/}
+  url = {https://joyjitchatterjee.github.io/assets/papers/glow-2026-power-line-om.pdf}
 }
 ```
 

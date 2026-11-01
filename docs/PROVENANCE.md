@@ -18,6 +18,6 @@ No human severity values or expert identities are inferred. Free-text maintenanc
 
 ## Citation and versions
 
-The [GLOW @ ISWC 2026 programme](https://glow-workshop.github.io/iswc2026/) confirms the paper title and author order. Citation metadata also follows the author-supplied paper and slides. No unverified DOI or proceedings volume is introduced.
+The [GLOW @ ISWC 2026 programme](https://glow-workshop.github.io/iswc2026/) confirms the paper title and author order. The [paper PDF](https://joyjitchatterjee.github.io/assets/papers/glow-2026-power-line-om.pdf) is available on Joyjit Chatterjee's website and is linked in the citation metadata. Citation metadata also follows the author-supplied paper and slides. No unverified DOI or proceedings volume is introduced.
 
 Cite the paper and the release tag or commit. This version is a clean public history containing only the intended reusable resources. Checksums in [SHA256SUMS](../SHA256SUMS) cover corpus and graph artifacts.
