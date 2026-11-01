@@ -1,0 +1,20 @@
+PowerLine KG & Corpus licensing
+
+Copyright (c) 2026 the PowerLine KG & Corpus contributors.
+
+1. Original knowledge graph content and documentation are licensed under
+   Creative Commons Attribution 4.0 International (CC-BY-4.0).
+   See LICENSES/CC-BY-4.0.txt.
+
+2. Python source code is licensed under the MIT License.
+   See LICENSES/MIT.txt. Graph data expressed in Cypher falls under item 1.
+
+3. The image-and-annotation corpus (data/annotations.csv,
+   data/annotations.jsonl, data/images/) and its InsPLAD source labels are
+   distributed under Creative Commons Attribution-NonCommercial 3.0
+   Unported (CC-BY-NC-3.0). See LICENSES/CC-BY-NC-3.0.txt.
+
+These grants apply only to rights held by the contributors. They do not
+relicense third-party content or engineering standards. Attribute this work
+and InsPLAD, retain notices, and identify modifications when redistributing.
+See CITATION.cff and THIRD_PARTY_NOTICES.md.

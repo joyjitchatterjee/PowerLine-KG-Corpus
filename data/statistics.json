@@ -1,0 +1,37 @@
+{
+  "human_annotations": 85,
+  "images": 85,
+  "components": 17,
+  "human_defect_present": {
+    "true": 53,
+    "false": 32
+  },
+  "source_condition_counts": {
+    "good": 32,
+    "missingcap": 4,
+    "nest": 3,
+    "peeling-paint": 4,
+    "rust": 38,
+    "torned-up": 4
+  },
+  "component_counts": {
+    "glass_insulator": 5,
+    "glass_insulator_big_shackle": 5,
+    "glass_insulator_small_shackle": 5,
+    "glass_insulator_tower_shackle": 5,
+    "lightning_rod_shackle": 5,
+    "lightning_rod_suspension": 5,
+    "polymer_insulator": 5,
+    "polymer_insulator_lower_shackle": 5,
+    "polymer_insulator_tower_shackle": 5,
+    "polymer_insulator_upper_shackle": 5,
+    "spacer": 5,
+    "spiral_damper": 5,
+    "stockbridge_damper": 5,
+    "tower_id_plate": 5,
+    "vari-grip": 5,
+    "yoke": 5,
+    "yoke_suspension": 5
+  },
+  "maintenance_rules": 11
+}

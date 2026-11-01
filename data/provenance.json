@@ -1,0 +1,30 @@
+{
+  "release_version": "1.0.0",
+  "release_date": "2026-11-01",
+  "annotation_source": {
+    "filename": "human_annotation_workbook_blind_only_labelled.xlsx",
+    "sha256": "e9fc11053359efac8575df9c42a201b373f7828cd665a6b0ae8471b965289d44",
+    "sheet": "Blind_Image_Annotation",
+    "data_rows": 85
+  },
+  "image_source": {
+    "name": "InsPLAD",
+    "url": "https://data.mendeley.com/datasets/5n3fjgvfyz/1",
+    "license": "CC-BY-NC-3.0"
+  },
+  "graph_source": {
+    "repository": "https://github.com/joyjitchatterjee/PowerLine-AgenticAI",
+    "branch": "develop",
+    "commit": "61912dfc0d46103934b68c66145f30bcd91a23ca"
+  },
+  "transformations": [
+    "Joined workbook rows to source image metadata by exact record_id; all 85 labels match the source inventory.",
+    "Preserved human description, action and note wording, including spelling and whitespace.",
+    "Replaced 0 U+2014 characters with ASCII hyphens in exported annotation fields.",
+    "Mapped yes/no to JSON booleans; source row and review ID retained.",
+    "Copied 85 original JPEG crops without altering pixels, using record IDs as portable filenames.",
+    "Restricted graph seed to reusable domain knowledge and the human corpus dataset node; removed experimental artifact metadata.",
+    "Retained severity-conditioned action fixes and duplicate-free CONFORMS_TO relationships.",
+    "Database loaders use NEO4J_PASSWORD; seed loading fails if a Cypher statement fails."
+  ]
+}

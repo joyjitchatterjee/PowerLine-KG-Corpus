@@ -1,0 +1,12 @@
+defect,severity_level,action,rationale
+bird_nest,2,bird_nest_removal,Nest not yet bridging clearance but growing. Remove and install deterrents before fire season.
+bird_nest,3,emergency_intervention,"Large nest bridging live-to-ground clearance. Immediate flashover and fire risk, especially in dry conditions."
+corrosion,1,visual_monitoring,Early-stage surface oxidation within normal weathering. Track progression rate via UAV image comparison.
+corrosion,2,hardware_replacement,Pitting corrosion reduces cross-sectional area. Replace before safety factor drops below design minimum.
+corrosion,3,emergency_intervention,Extensive material loss. Immediate risk of hardware fracture under normal loading or transient (ice/wind).
+housing_tear,2,insulator_string_replacement,Housing breach risks moisture ingress to GRP core. Replace proactively to avoid catastrophic brittle fracture.
+housing_tear,3,emergency_intervention,Core rod likely compromised. Brittle fracture can occur without warning under normal mechanical load.
+missing_cap,2,insulator_disc_replacement,Single missing disc: adequate remaining withstand for dry conditions but reduced margin under contamination/rain.
+missing_cap,3,emergency_intervention,Multiple missing discs: flashover likely under wet contaminated conditions. Risk of sustained fault.
+peeling_paint,1,visual_monitoring,Number still legible. Schedule repaint at next routine tower maintenance.
+peeling_paint,2,id_plate_repaint,Tower number becoming illegible. Repaint to maintain asset register accuracy and emergency dispatch capability.

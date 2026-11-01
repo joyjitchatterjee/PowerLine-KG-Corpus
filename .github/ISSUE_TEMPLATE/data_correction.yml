@@ -1,0 +1,24 @@
+name: Data or graph correction
+description: Report an annotation, provenance, or graph-rule problem.
+title: '[Data correction] '
+body:
+  - type: input
+    id: version
+    attributes:
+      label: Release version or commit
+    validations:
+      required: true
+  - type: input
+    id: record
+    attributes:
+      label: Record ID or graph relationship
+      description: Include the defect and severity for maintenance-rule issues.
+    validations:
+      required: true
+  - type: textarea
+    id: correction
+    attributes:
+      label: Current value, proposed correction, and supporting evidence
+      description: Keep human annotations distinct from model-generated suggestions.
+    validations:
+      required: true

@@ -1,0 +1,63 @@
+cff-version: 1.2.0
+message: "Please cite the accompanying paper and identify the release version used."
+type: dataset
+title: "PowerLine KG & Corpus: Knowledge Graph and Human-Annotated InsPLAD Descriptions"
+version: 1.0.0
+date-released: '2026-11-01'
+url: https://github.com/joyjitchatterjee/PowerLine-KG-Corpus
+repository-code: https://github.com/joyjitchatterjee/PowerLine-KG-Corpus
+license:
+  - CC-BY-4.0
+  - CC-BY-NC-3.0
+  - MIT
+authors:
+  - family-names: Verma
+    given-names: Sania
+  - family-names: Chatterjee
+    given-names: Joyjit
+  - family-names: Guo
+    given-names: Jing
+  - family-names: Marar
+    given-names: Akash
+  - family-names: Shankaran
+    given-names: Rajendra
+  - family-names: Sharma
+    given-names: Garima
+  - family-names: Guo
+    given-names: Zekun
+  - family-names: Mehra
+    given-names: Anu
+keywords:
+  - knowledge graph
+  - power-line inspection
+  - vision-language models
+  - evidence grounding
+  - maintenance
+  - InsPLAD
+preferred-citation:
+  type: conference-paper
+  title: "Graph-Grounded Multimodal Agent for Trustworthy Power-Line Operations and Maintenance"
+  authors:
+    - family-names: Verma
+      given-names: Sania
+    - family-names: Chatterjee
+      given-names: Joyjit
+    - family-names: Guo
+      given-names: Jing
+    - family-names: Marar
+      given-names: Akash
+    - family-names: Shankaran
+      given-names: Rajendra
+    - family-names: Sharma
+      given-names: Garima
+    - family-names: Guo
+      given-names: Zekun
+    - family-names: Mehra
+      given-names: Anu
+  year: 2026
+  collection-title: "2nd Workshop on Graph-enhanced LLMs for trustworthy Web data management (GLOW), co-located with ISWC"
+  conference:
+    name: "GLOW @ ISWC 2026"
+    city: Bari
+    country: IT
+  url: https://glow-workshop.github.io/iswc2026/
