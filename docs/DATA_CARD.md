@@ -1,5 +1,7 @@
 # Human annotation data card
 
+This card describes the unchanged 85-record workbook corpus. The separately supplied 255-record mixed-provenance collection has its own [companion data card](COMPANION_DATA_CARD.md). All 85 workbook images are included among those 255 images; source descriptions are kept separate.
+
 ## Composition and origin
 
 The corpus contains 85 human-annotated image records across 17 power-line component types, with five images per component. Every record has a defect-presence label, description, recommended action, and annotator note. The human labels contain 53 yes and 32 no values, exported as booleans.

@@ -1,9 +1,9 @@
 cff-version: 1.2.0
 message: "Please cite the accompanying paper and identify the release version used."
 type: dataset
-title: "PowerLine KG & Corpus: Knowledge Graph and Human-Annotated InsPLAD Descriptions"
-version: 1.0.0
-date-released: '2026-11-01'
+title: "PowerLine KG & Corpus: Knowledge Graph and InsPLAD Image Descriptions"
+version: 1.1.0
+date-released: '2026-11-02'
 url: https://github.com/joyjitchatterjee/PowerLine-KG-Corpus
 repository-code: https://github.com/joyjitchatterjee/PowerLine-KG-Corpus
 license:

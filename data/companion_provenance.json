@@ -1,0 +1,93 @@
+{
+  "source_filename": "final_dataset.csv",
+  "source_sha256": "0a2cdd017c28b2cd732651dafd3e872c5f8832b7aed278397d49dcaa7b5ff816",
+  "source_rows": 255,
+  "release_version": "1.1.0",
+  "release_date": "2026-11-02",
+  "reference_inventory": {
+    "repository": "https://github.com/joyjitchatterjee/PowerLine-AgenticAI",
+    "commit": "61912dfc0d46103934b68c66145f30bcd91a23ca",
+    "path": "outputs/vlm_description_corpus/manifest.jsonl",
+    "sha256": "66cdc31f5bc12c002789fdbff1af7c350c8b4ae85b9d72553720e4ac0268ba76"
+  },
+  "record_id_corrections": [
+    {
+      "source_row": 77,
+      "source_record_id": "3.96865E+11",
+      "record_id": "396864540077",
+      "matched_filename": "001__Fotos 25-11-2020_DJI_0384_manilha_isolador_vidro_torre_160.jpg",
+      "method": "Unique exact filename match after NFC normalization; component, condition, severity and defect presence also agree."
+    },
+    {
+      "source_row": 190,
+      "source_record_id": "4.23E+208",
+      "record_id": "42330097e201",
+      "matched_filename": "009__09-06-2021_DJI_0302_528.jpg",
+      "method": "Unique exact filename match after NFC normalization; component, condition, severity and defect presence also agree."
+    }
+  ],
+  "description_origin": {
+    "human_labels": "Supplied CSV attributes 66 rows to human_annotator3 and 4 to human_annotator2. These labels are preserved; authorship and review status are not independently verified.",
+    "auto_generated": "All 185 descriptions exactly match the original knowledge_grounded_label_template_v1 target text. They are template-generated, not verified GPT outputs.",
+    "severity": "All 255 supplied severity values match the original bootstrap manifest. No evidence establishes them as expert-assessed severity labels."
+  },
+  "transformations": [
+    "Preserved description and recommended_action wording and all supplied source labels.",
+    "Replaced 0 U+2014 characters with ASCII hyphens.",
+    "Converted TRUE/FALSE to JSON booleans; retained missing action strings without imputation.",
+    "Replaced machine-specific Drive image paths with portable record-ID filenames; retained original dataset paths and image hashes.",
+    "Recovered two damaged IDs by unique filename matches, retaining the supplied IDs and source row numbers.",
+    "Retained the 85-row workbook corpus separately and unchanged; no automatic adjudication or replacement."
+  ],
+  "statistics": {
+    "records": 255,
+    "components": 17,
+    "description_sources": {
+      "auto_generated": 185,
+      "human_annotator2": 4,
+      "human_annotator3": 66
+    },
+    "description_kinds": {
+      "human_labelled": 70,
+      "template_generated": 185
+    },
+    "component_counts": {
+      "glass_insulator": 15,
+      "glass_insulator_big_shackle": 15,
+      "glass_insulator_small_shackle": 15,
+      "glass_insulator_tower_shackle": 15,
+      "lightning_rod_shackle": 15,
+      "lightning_rod_suspension": 15,
+      "polymer_insulator": 15,
+      "polymer_insulator_lower_shackle": 15,
+      "polymer_insulator_tower_shackle": 15,
+      "polymer_insulator_upper_shackle": 15,
+      "spacer": 15,
+      "spiral_damper": 15,
+      "stockbridge_damper": 15,
+      "tower_id_plate": 15,
+      "vari-grip": 15,
+      "yoke": 15,
+      "yoke_suspension": 15
+    },
+    "condition_counts": {
+      "good": 139,
+      "missingcap": 10,
+      "nest": 6,
+      "peeling-paint": 4,
+      "rust": 86,
+      "torned-up": 10
+    },
+    "severity_counts": {
+      "minor": 4,
+      "moderate": 102,
+      "normal": 139,
+      "severe": 10
+    },
+    "recommended_actions_present": 70,
+    "recommended_actions_missing": 185,
+    "overlap_with_workbook_image_ids": 85,
+    "human_labelled_overlap_with_workbook": 70,
+    "human_labelled_descriptions_matching_workbook": 0
+  }
+}

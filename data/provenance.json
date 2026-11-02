@@ -1,6 +1,6 @@
 {
-  "release_version": "1.0.0",
-  "release_date": "2026-11-01",
+  "release_version": "1.1.0",
+  "release_date": "2026-11-02",
   "annotation_source": {
     "filename": "human_annotation_workbook_blind_only_labelled.xlsx",
     "sha256": "e9fc11053359efac8575df9c42a201b373f7828cd665a6b0ae8471b965289d44",
@@ -26,5 +26,6 @@
     "Restricted graph seed to reusable domain knowledge and the human corpus dataset node; removed experimental artifact metadata.",
     "Retained severity-conditioned action fixes and duplicate-free CONFORMS_TO relationships.",
     "Database loaders use NEO4J_PASSWORD; seed loading fails if a Cypher statement fails."
-  ]
+  ],
+  "companion_provenance": "data/companion_provenance.json"
 }

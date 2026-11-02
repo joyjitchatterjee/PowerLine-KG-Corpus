@@ -10,7 +10,8 @@ Copyright (c) 2026 the PowerLine KG & Corpus contributors.
    See LICENSES/MIT.txt. Graph data expressed in Cypher falls under item 1.
 
 3. The image-and-annotation corpus (data/annotations.csv,
-   data/annotations.jsonl, data/images/) and its InsPLAD source labels are
+   data/annotations.jsonl, data/companion_descriptions.csv,
+   data/companion_descriptions.jsonl, data/images/) and its InsPLAD source labels are
    distributed under Creative Commons Attribution-NonCommercial 3.0
    Unported (CC-BY-NC-3.0). See LICENSES/CC-BY-NC-3.0.txt.
 

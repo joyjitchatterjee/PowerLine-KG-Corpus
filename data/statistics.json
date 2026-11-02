@@ -1,6 +1,6 @@
 {
   "human_annotations": 85,
-  "images": 85,
+  "images": 255,
   "components": 17,
   "human_defect_present": {
     "true": 53,
@@ -33,5 +33,58 @@
     "yoke": 5,
     "yoke_suspension": 5
   },
-  "maintenance_rules": 11
+  "maintenance_rules": 11,
+  "human_corpus_images": 85,
+  "total_description_records": 340,
+  "companion": {
+    "records": 255,
+    "components": 17,
+    "description_sources": {
+      "auto_generated": 185,
+      "human_annotator2": 4,
+      "human_annotator3": 66
+    },
+    "description_kinds": {
+      "human_labelled": 70,
+      "template_generated": 185
+    },
+    "component_counts": {
+      "glass_insulator": 15,
+      "glass_insulator_big_shackle": 15,
+      "glass_insulator_small_shackle": 15,
+      "glass_insulator_tower_shackle": 15,
+      "lightning_rod_shackle": 15,
+      "lightning_rod_suspension": 15,
+      "polymer_insulator": 15,
+      "polymer_insulator_lower_shackle": 15,
+      "polymer_insulator_tower_shackle": 15,
+      "polymer_insulator_upper_shackle": 15,
+      "spacer": 15,
+      "spiral_damper": 15,
+      "stockbridge_damper": 15,
+      "tower_id_plate": 15,
+      "vari-grip": 15,
+      "yoke": 15,
+      "yoke_suspension": 15
+    },
+    "condition_counts": {
+      "good": 139,
+      "missingcap": 10,
+      "nest": 6,
+      "peeling-paint": 4,
+      "rust": 86,
+      "torned-up": 10
+    },
+    "severity_counts": {
+      "minor": 4,
+      "moderate": 102,
+      "normal": 139,
+      "severe": 10
+    },
+    "recommended_actions_present": 70,
+    "recommended_actions_missing": 185,
+    "overlap_with_workbook_image_ids": 85,
+    "human_labelled_overlap_with_workbook": 70,
+    "human_labelled_descriptions_matching_workbook": 0
+  }
 }

@@ -1,6 +1,8 @@
 # Provenance
 
-Version 1.0.0 was prepared on 1 November 2026 as a focused release of domain knowledge and human-annotated image descriptions.
+Version 1.0.0 was prepared on 1 November 2026 as a focused release of domain knowledge and human-annotated image descriptions. Version 1.1.0, dated 2 November 2026, adds the author's `final_dataset.csv` as a separate mixed-provenance companion while preserving the original 85 workbook records unchanged.
+
+The companion contains 70 descriptions labelled human by the supplied CSV and 185 descriptions that exactly match the original label-and-ontology templates. Two damaged IDs were restored through unique filename matches, and machine-specific image paths were made portable. Source hashes, corrections and annotation differences are documented in [companion_provenance.json](../data/companion_provenance.json) and the [companion data card](COMPANION_DATA_CARD.md). The companion does not replace the workbook source or introduce evaluation results.
 
 ## Annotations and images
 

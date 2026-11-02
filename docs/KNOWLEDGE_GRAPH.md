@@ -31,6 +31,8 @@ python ontology/load_annotations.py --verify
 
 The annotation loader adds 85 `Image` nodes and 85 `HumanAnnotation` nodes, with exact text, image paths, source labels and provenance. Images link to their component and corpus dataset. Rerunning the annotation loader is idempotent. It does not convert human text or source condition labels into severity or action edges.
 
+The 255-record mixed-provenance companion is distributed separately as CSV/JSONL. This loader does not import it as human ground truth. The domain KG and workbook corpus are unchanged by that addition.
+
 The seed loader rejects reseeding an existing graph. `--clear` deletes data from the selected database and should only be used for disposable instances. The supplied repair utility supports correction of existing domain graphs.
 
 ## Query examples

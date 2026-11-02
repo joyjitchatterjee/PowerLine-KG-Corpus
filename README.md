@@ -1,6 +1,6 @@
 # PowerLine KG & Corpus
 
-**A power-line maintenance knowledge graph and 85 human-annotated InsPLAD image descriptions for research reuse.**
+**A power-line maintenance knowledge graph and image-description resources covering 255 InsPLAD UAV images, with explicit annotation provenance.**
 
 [![Validate release](https://github.com/joyjitchatterjee/PowerLine-KG-Corpus/actions/workflows/validate.yml/badge.svg)](https://github.com/joyjitchatterjee/PowerLine-KG-Corpus/actions/workflows/validate.yml)
 [![GLOW at ISWC](https://img.shields.io/badge/GLOW%20%40%20ISWC-2026-315c85)](https://glow-workshop.github.io/iswc2026/)
@@ -10,20 +10,23 @@ Companion data for **[Graph-Grounded Multimodal Agent for Trustworthy Power-Line
 
 Sania Verma, Joyjit Chatterjee, Jing Guo, Akash Marar, Rajendra Shankaran, Garima Sharma, Zekun Guo, and Anu Mehra.
 
-[Paper PDF](https://joyjitchatterjee.github.io/assets/papers/glow-2026-power-line-om.pdf) | [Download annotations](data/annotations.csv) | [Data card](docs/DATA_CARD.md) | [Load the KG](docs/KNOWLEDGE_GRAPH.md) | [Provenance](docs/PROVENANCE.md) | [Citation](#citation)
+[Paper PDF](https://joyjitchatterjee.github.io/assets/papers/glow-2026-power-line-om.pdf) | [85 human annotations](data/annotations.csv) | [255-record companion](data/companion_descriptions.csv) | [Data cards](docs/DATA_CARD.md) | [Load the KG](docs/KNOWLEDGE_GRAPH.md) | [Citation](#citation)
 
 ## Available resources
 
 | Resource | Contents | Files |
 |---|---|---|
 | Human annotations | 85 descriptions, defect-presence labels, recommended actions, and annotator notes | [CSV](data/annotations.csv), [JSONL](data/annotations.jsonl) |
-| Linked images | 85 original InsPLAD JPEG crops, identified by stable record IDs | [Images](data/images) |
+| Mixed-provenance companion | 255 descriptions: 70 labelled human in the supplied CSV and 185 template-generated | [CSV](data/companion_descriptions.csv), [JSONL](data/companion_descriptions.jsonl), [data card](docs/COMPANION_DATA_CARD.md) |
+| Linked images | 255 original InsPLAD JPEG crops, identified by stable record IDs | [Images](data/images) |
 | Domain knowledge graph | 18 component types, 5 defect types, 4 severity levels, failure modes, risks, standards, and actions | [Schema](ontology/schema.cypher), [Seed](ontology/seed_data.cypher) |
 | Decision rules | 11 supported defect/severity combinations | [CSV](data/maintenance_rules.csv) |
 
 The human corpus covers 17 component types, with five images each. All 85 records have complete descriptions, recommended actions, and notes. The human defect labels comprise 53 defect-present and 32 defect-absent records. Annotation wording, spelling, and uncertainty are preserved.
 
-This repository releases reusable knowledge and annotations. Evaluation predictions, model comparisons, scores, experimental splits, generated descriptions, and simulation outputs are not included.
+The companion covers the same 17 components with 15 images each. All 85 workbook images occur in the companion, so the release contains **255 unique images and 340 separately sourced description records**. The companion's 70 human-labelled descriptions differ from the workbook descriptions for those images. Both sources are preserved independently; neither silently replaces the other. Its 185 automatically generated descriptions exactly match the original label-and-ontology templates. They are not verified GPT outputs or human ground truth.
+
+This repository releases reusable knowledge and descriptions. Evaluation predictions, model comparisons, scores, experimental splits, and simulation outputs are not included.
 
 ```mermaid
 flowchart LR
@@ -63,7 +66,15 @@ print(record['recommended_action'])
 print(root / record['image_path'])
 ```
 
-Use [the Neo4j guide](docs/KNOWLEDGE_GRAPH.md) to explore the graph or import the human annotations. Human text is stored separately from the domain rules. The loader does not infer severity or reconcile disagreements between human recommendations and KG actions.
+For the companion, retain provenance when filtering records:
+
+```python
+companion = [json.loads(line) for line in (root / 'data/companion_descriptions.jsonl').read_text().splitlines()]
+human_labelled = [row for row in companion if row['description_kind'] == 'human_labelled']
+template_generated = [row for row in companion if row['description_kind'] == 'template_generated']
+```
+
+Use [the Neo4j guide](docs/KNOWLEDGE_GRAPH.md) to explore the graph or import the 85 workbook annotations. The loader continues to import only that source. Companion records are provided as separate CSV/JSONL files and are not imported as verified human observations. No severity or action is inferred from human text.
 
 ## Research uses
 
